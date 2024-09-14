@@ -8,10 +8,10 @@ import tensorflow as tf
 
 
 
-MODEL = tf.keras.models.load_model(r"C:\Users\saad_\OneDrive\Bureau\TruckClassification-v2\TruckClassification-v2\models\1")
+MODEL = tf.keras.models.load_model("../models/3")
 app = FastAPI()
 
-CLASS_NAMES = ["tank_truck", "tipper truck"]
+CLASS_NAMES = ["chargement citerne", "chargement remorque", "déchargement citerne", "déchargement remorque"]
 
 
 origins = [
@@ -51,7 +51,7 @@ async def predict(
         'confidence': float(confidence)
     }
 if __name__ == "__main__":
-    uvicorn.run(app, host='localhost', port=8080)
+    uvicorn.run(app, host='localhost', port=8000)
 
 
 

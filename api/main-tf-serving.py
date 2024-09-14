@@ -21,9 +21,9 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-endpoint = "http://localhost:8501/v1/models/potatoes_model:predict"
+endpoint = "http://localhost:3000/v1/models/trucks:predict"
 
-CLASS_NAMES = ["tank truck", "tipper truck"]
+CLASS_NAMES = ["chargement citerne", "chargement remorque", "déchargement citerne", "déchargement remorque"]
 
 @app.get("/")
 async def ping():
@@ -56,4 +56,4 @@ async def predict(
     }
 
 if __name__ == "__main__":
-    uvicorn.run(app, host='localhost', port=8000)
+    uvicorn.run(app, host='localhost', port=8080)

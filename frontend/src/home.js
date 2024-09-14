@@ -10,7 +10,6 @@ import Card from "@material-ui/core/Card";
 import CardContent from "@material-ui/core/CardContent";
 import { Paper, CardActionArea, CardMedia, Grid, TableContainer, Table, TableBody, TableHead, TableRow, TableCell, Button, CircularProgress } from "@material-ui/core";
 import cblogo from "./cblogo.PNG";
-import image from "./bg.png";
 import { DropzoneArea } from 'material-ui-dropzone';
 import { common } from '@material-ui/core/colors';
 import Clear from '@material-ui/icons/Clear';
@@ -48,7 +47,7 @@ const useStyles = makeStyles((theme) => ({
     flexGrow: 1,
   },
   media: {
-    height: 400,
+    height: 300,
   },
   paper: {
     padding: theme.spacing(2),
@@ -65,12 +64,12 @@ const useStyles = makeStyles((theme) => ({
     backgroundPosition: 'center',
     backgroundSize: 'cover',
     height: "93vh",
-    marginTop: "8px",
+    marginTop: "5px",
   },
   imageCard: {
     margin: "auto",
-    maxWidth: 400,
-    height: 500,
+    maxWidth: 450,
+    height: 400,
     backgroundColor: '#7BCEF6',
     boxShadow: '0px 9px 70px 0px rgb(0 0 0 / 30%) !important',
     borderRadius: '15px',
@@ -80,7 +79,7 @@ const useStyles = makeStyles((theme) => ({
   },
   noImage: {
     margin: "auto",
-    width: 400,
+    width: 450,
     height: "400 !important",
   },
   input: {
